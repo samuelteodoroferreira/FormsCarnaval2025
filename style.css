@@ -1,0 +1,117 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    border: 2px solid #04883d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+/* Grupos de formulário */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%; 
+    max-width: 100%; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs, selects, textareas e botões */
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; 
+    max-width: 100%; 
+    margin-right: 10px;
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho total */
+}
+
+/* Inputs de checkbox e rádio */
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Botão */
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Grupo de checkboxes */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+}
+
+/* Fieldsets e legends */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+textarea {
+    width: 100%; 
+    max-width: 100%; 
+    min-height: 100px; 
+    resize: vertical; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+legend input {
+    text-size-adjust: 8px;
+    margin-right: 10px;
+}

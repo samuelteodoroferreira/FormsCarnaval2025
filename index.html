@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiro e Ficha Técnica dos Blocos de Rua 2025</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha Técnica dos Blocos de Rua 2025</h1>
+        <form>
+           
+            <div class="form-group">
+                <label for="presidente">Presidente / Responsável</label>
+                <input type="text" id="presidente" name="presidente" placeholder="Ex.: XXX.XXX.XXX-XX" required>
+            </div>
+
+            <div class="form-group">
+                <label for="presidente">CPF do Presidente ou Responsável</label>
+                <input type="text" id="presidente" name="presidente" placeholder="Ex.: João Silva" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone de Contato *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Ex.: (21) 99999-9999" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bloco">Nome do Bloco *</label>
+                <input type="text" id="bloco" name="bloco" placeholder="Ex.: Bloco da Alegria" required>
+            </div>
+            <div class="form-group">
+                <label for="localidade">Localidade *</label>
+                <input type="text" id="localidade" name="localidade" placeholder="Ex.: Bairro ou cidade" required>
+            </div>
+            <fieldset>
+                <legend>Classificação</legend>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"  id="sambaCheckbox" name="classificacao" value="Samba">Samba</label>
+                    <label><input type="checkbox" name="classificacao" value="Banda">Banda</label>
+                    <label><input type="checkbox" name="classificacao" value="DJ">DJ</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="tipoDeSomFieldset">
+                <legend>Tipo De Som</legend>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="classificacao" value="Samba">Bateria Própria</label>
+                    <label><input type="radio" name="classificacao" value="Banda">Bateria Alugada</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="ano">Ano de Fundação</label>
+                <select id="ano" name="ano"></select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="participantes_estimados">Participantes Estimados</label>
+                    <select name="participantes_estimados">
+                    <option value="+ 2000">Acima de 2000</option>
+                    <option value="Até 2000">Até 2000</option>
+                    <option value="Até 1000">Até 1000</option>
+                    <option value="Até 500">Até 500</option>
+                </select> 
+            </div>
+
+            <br>
+                <div class="form-group">
+                    <label for="participantes_estimados">
+                        <p>
+                            Selecione abaixo o número de participações nos desfiles dos últimos 20 anos na programação oficial da Prefeitura de Angra, considerando participações consecutivas.
+                        </p>
+                        <legend class="legend">
+                            <small>
+                                OBS.: Excluindo o período de COVID-19 nos anos de 2021 e 2022
+                            </small>
+                        </legend>
+                    </label>
+                        <select name="participantes_estimados">
+                        <option value="+ 2000">20 ou mais participações</option>
+                        <option value="Até 2000">15 participações</option>
+                        <option value="Até 1000">10 participações</option>
+                        <option value="Até 500">05 participações</option>
+                        <option value="Até 500">primeira participação</option>
+                    </select> 
+                </div>
+             </br>
+
+            <div class="form-group">
+                <label for="destaques">Destaques</label>
+                <textarea id="destaques" name="destaques" placeholder="Ex.: Rainha de Bateria, Porta Bandeira"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="concentracao">Local de Concentração *</label>
+                <input type="text" id="concentracao" name="concentracao" placeholder="Ex.: Praça Central" required>
+            </div>
+            <div class="form-group">
+                <label for="inicio">Horário de Início da Concentração *</label>
+                <input type="time" id="inicio" name="inicio" required>
+            </div>
+            <div class="form-group">
+                <label for="roteiro">Trajeto</label>
+                <textarea id="roteiro" name="roteiro" placeholder="Ex.: Praça Central > Rua A > Rua B"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="dispersao">Local de Dispersão</label>
+                <input type="text" id="dispersao" name="dispersao" placeholder="Ex.: Rua Final">
+            </div>
+            <div class="form-group">
+                <label for="necessidades">Necessidades Técnicas</label>
+                <textarea id="necessidades" name="necessidades" placeholder="Ex.: 2 microfones, CDJ, etc."></textarea>
+            </div>
+            <button type="submit">Enviar Ficha</button>
+        </form>
+    </div>
+</body>
+</html>
